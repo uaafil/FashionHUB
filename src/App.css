@@ -1,0 +1,45 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height layout with flex column */
+html, body, #root {
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* This ensures main content grows and pushes footer down */
+.main-content {
+  flex-grow: 1;
+  background-color: #000; /* black box */
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.product-image {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: white; /* Optional: to pad transparent images */
+}
